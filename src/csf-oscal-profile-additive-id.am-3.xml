@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/oscal.css"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/main/xml/schema/oscal_profile_schema.xsd" 
+    uuid="0dd2e99e-4785-4bca-b22c-f42159cf3439">
+    <metadata>
+        <title>ID.AM-3 with OT Guidance from SP 800-82r3.ipd</title>
+        <last-modified>2023-02-13T14:24:42.9785643-05:00</last-modified>
+        <version>1.1</version>
+        <oscal-version>1.0.4</oscal-version>
+        <link rel="reference" href="#de298731-62fe-409a-b3dd-e7e8bfe688e8"/>
+    </metadata>
+    <import href="../resolved/csf-oscal-profile-ot-id.am-3-resolved.xml">
+        <include-all/>
+    </import>
+    <merge>
+        <as-is>true</as-is>
+    </merge>
+    <modify>
+        <alter control-id="id.am-3">
+            <remove by-name="ot-specific"/>
+            <add>
+                <part name="am-specific" class="Additive-specific-guidance" ns="https://gitlab.nist.gov/gitlab/rmf-tools">
+                    <p>Data flow diagrams for AM processes represent not only the flow of data between
+                        networked components, but also relationships between data elements and their
+                        impacts on printed parts. AM provides more freedom in design complexity than other
+                        manufacturing technologies. Therefore, AM processes are heavily data-driven.  Examples
+                        of AM data elements that can be manipulated to adversely affect the manufacturing
+                        process include CAD geometry data, material specifications, AM machine function
+                        specifications, and process parameters such as layer thickness and infill pattern.
+                        Examples of adverse impacts include porosity, tensile strength, anisotropy, surface
+                        roughness, and geometric and dimensional inaccuracy.</p>
+                </part>
+            </add>
+        </alter>
+    </modify>
+</profile>

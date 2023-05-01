@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/oscal.css"?>
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/main/xml/schema/oscal_catalog_schema.xsd" 
+    uuid="4ee75a26-c3fd-43b5-bf41-df760054abd1">
+    <metadata>
+        <title>Cybersecurity Framework</title>
+        <last-modified>2022-12-07T15:22:37.5489801-05:00</last-modified>
+        <version>1.1</version>
+        <oscal-version>1.0.4</oscal-version>
+        <document-id>Framework-v1.1</document-id>
+    </metadata>
+    <group class="function" id="id">
+        <title>IDENTIFY</title>
+        <prop name="label" value="ID"/>
+        <part name="statement">
+            <p>Develop an organizational understanding to manage cybersecurity risk to systems, people, assets, 
+                data, and capabilities.</p>
+        </part>
+        <control class="category" id="id.am">
+            <title>Asset Management</title>
+            <prop name="label" value="ID.AM"/>
+            <part name="statement" class="outcome">
+                <p>The data, personnel, devices, systems, and facilities that enable the organization to achieve 
+                    business purposes are identified and managed consistent with their relative importance to 
+                    organizational objectives and the organization’s risk strategy.</p>
+            </part>
+            <control class="subcategory" id="id.am-3">
+                <title>ID.AM-3</title>
+                <prop name="label" value="ID.AM-3"/>
+                <part name="statement" class="outcome">
+                    <p>Organizational communication and data flows are mapped</p>
+                </part>
+            </control>
+            <!-- Add remaining ID.AM subcategories here -->
+        </control>
+        <!-- Add remaining IDENTIFY categories (ID.BE, ID.GV, etc.) here -->
+    </group>
+    <group class="function">
+        <title>PROTECT</title>
+        <prop name="label" value="PR"/>
+        <part name="statement">
+            <p>Develop and implement appropriate safeguards to ensure delivery of critical services.</p>
+        </part>
+        <!-- Add PROTECT categories here -->
+    </group>
+    <!--  Add DETECT, RESPOND, RECOVER functions here  -->
+</catalog>

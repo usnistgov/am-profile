@@ -1,0 +1,72 @@
+---
+catalog:
+  uuid: a1a1fa5d-a53a-414d-8aed-906b7bb82176
+  metadata:
+    title: ID.AM-3 with OT Guidance from SP 800-82r3.ipd
+    last-modified: '2023-05-01T09:13:56.394251-04:00'
+    version: '1.1'
+    oscal-version: 1.0.4
+    links:
+    - href: csf-oscal-profile-ot-id.am-3.xml
+      rel: resolution-source
+    - href: '#de298731-62fe-409a-b3dd-e7e8bfe688e8'
+      rel: reference
+  groups:
+  - id: id
+    class: function
+    title: IDENTIFY
+    props:
+    - name: label
+      value: ID
+    parts:
+    - name: statement
+      prose: Develop an organizational understanding to manage cybersecurity risk to systems, people,
+        assets, data, and capabilities.
+    controls:
+    - id: id.am
+      class: category
+      title: Asset Management
+      props:
+      - name: label
+        value: ID.AM
+      parts:
+      - name: statement
+        class: outcome
+        prose: The data, personnel, devices, systems, and facilities that enable the organization to achieve
+          business purposes are identified and managed consistent with their relative importance to organizational
+          objectives and the organization’s risk strategy.
+      controls:
+      - id: id.am-3
+        class: subcategory
+        title: ID.AM-3
+        props:
+        - name: label
+          value: ID.AM-3
+        parts:
+        - name: statement
+          class: outcome
+          prose: Organizational communication and data flows are mapped
+        - name: guidance
+          ns: https://gitlab.nist.gov/gitlab/rmf-tools
+          class: supplemental-guidance
+          prose: Data flow diagrams enable a manufacturer to understand the flow of data between networked
+            components. Documenting data flows enables organizations to understand expected behavior of
+            their networks. This understanding of how devices communicate assists with troubleshooting
+            as well as response and recovery activities. This information can be leveraged during forensic
+            activities or used for analysis to identify anomalies.
+        - name: ot-specific
+          ns: https://gitlab.nist.gov/gitlab/rmf-tools
+          class: OT-specific-guidance
+          prose: Organizations should consider the impact on OT systems from the use of automated data
+            flow mapping tools that use active scanning or require network monitoring tools (e.g., in-line
+            network probes). Impacts could be due to the nature of the information, the volume of network
+            traffic, or momentary disconnection of manufacturing system components from the network. Consider
+            using data flow mapping tools that utilize these methods during planned downtime.
+  back-matter:
+    resources:
+    - uuid: de298731-62fe-409a-b3dd-e7e8bfe688e8
+      title: 'NIST Special Publication 800-53, Revision 5: * Security and Privacy Controls for Information
+        Systems and Organizations* (DOI link)'
+      rlinks:
+      - href: https://doi.org/10.6028/NIST.SP.800-53r5
+        media-type: application/pdf

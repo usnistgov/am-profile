@@ -1,0 +1,45 @@
+---
+profile:
+  uuid: 0dd2e99e-4785-4bca-b22c-f42159cf3439
+  metadata:
+    title: ID.AM-3 with OT Guidance from SP 800-82r3.ipd
+    last-modified: '2023-02-13T14:24:42.9785643-05:00'
+    version: '1.1'
+    oscal-version: 1.0.4
+    links:
+    - href: '#de298731-62fe-409a-b3dd-e7e8bfe688e8'
+      rel: reference
+  imports:
+  - href: csf-oscal-no-refs.xml
+    include-all: {}
+  merge:
+    as-is: true
+  modify:
+    alters:
+    - control-id: id.am-3
+      adds:
+      - parts:
+        - name: guidance
+          ns: https://gitlab.nist.gov/gitlab/rmf-tools
+          class: supplemental-guidance
+          prose: Data flow diagrams enable a manufacturer to understand the flow of data between networked
+            components. Documenting data flows enables organizations to understand expected behavior of
+            their networks. This understanding of how devices communicate assists with troubleshooting
+            as well as response and recovery activities. This information can be leveraged during forensic
+            activities or used for analysis to identify anomalies.
+        - name: ot-specific
+          ns: https://gitlab.nist.gov/gitlab/rmf-tools
+          class: OT-specific-guidance
+          prose: Organizations should consider the impact on OT systems from the use of automated data
+            flow mapping tools that use active scanning or require network monitoring tools (e.g., in-line
+            network probes). Impacts could be due to the nature of the information, the volume of network
+            traffic, or momentary disconnection of manufacturing system components from the network. Consider
+            using data flow mapping tools that utilize these methods during planned downtime.
+  back-matter:
+    resources:
+    - uuid: de298731-62fe-409a-b3dd-e7e8bfe688e8
+      title: 'NIST Special Publication 800-53, Revision 5: * Security and Privacy Controls for Information
+        Systems and Organizations* (DOI link)'
+      rlinks:
+      - href: https://doi.org/10.6028/NIST.SP.800-53r5
+        media-type: application/pdf

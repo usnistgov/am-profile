@@ -1,0 +1,53 @@
+---
+catalog:
+  uuid: 4ee75a26-c3fd-43b5-bf41-df760054abd1
+  metadata:
+    title: Cybersecurity Framework
+    last-modified: '2022-12-07T15:22:37.5489801-05:00'
+    version: '1.1'
+    oscal-version: 1.0.4
+    document-ids:
+    - identifier: Framework-v1.1
+  groups:
+  - id: id
+    class: function
+    title: IDENTIFY
+    props:
+    - name: label
+      value: ID
+    parts:
+    - name: statement
+      prose: Develop an organizational understanding to manage cybersecurity risk to systems, people,
+        assets, data, and capabilities.
+    controls:
+    - id: id.am
+      class: category
+      title: Asset Management
+      props:
+      - name: label
+        value: ID.AM
+      parts:
+      - name: statement
+        class: outcome
+        prose: The data, personnel, devices, systems, and facilities that enable the organization to achieve
+          business purposes are identified and managed consistent with their relative importance to organizational
+          objectives and the organization’s risk strategy.
+      controls:
+      - id: id.am-3
+        class: subcategory
+        title: ID.AM-3
+        props:
+        - name: label
+          value: ID.AM-3
+        parts:
+        - name: statement
+          class: outcome
+          prose: Organizational communication and data flows are mapped
+  - class: function
+    title: PROTECT
+    props:
+    - name: label
+      value: PR
+    parts:
+    - name: statement
+      prose: Develop and implement appropriate safeguards to ensure delivery of critical services.

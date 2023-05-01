@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/oscal.css"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/main/xml/schema/oscal_profile_schema.xsd" 
+    uuid="0dd2e99e-4785-4bca-b22c-f42159cf3439">
+    <metadata>
+        <title>ID.AM-3 with OT Guidance from SP 800-82r3.ipd</title>
+        <last-modified>2023-02-13T14:24:42.9785643-05:00</last-modified>
+        <version>1.1</version>
+        <oscal-version>1.0.4</oscal-version>
+        <link rel="reference" href="#de298731-62fe-409a-b3dd-e7e8bfe688e8"/>
+    </metadata>
+    <import href="csf-oscal-no-refs.xml">
+        <include-all/>
+    </import>
+    <merge>
+        <as-is>true</as-is>
+    </merge>
+    <modify>
+        <alter control-id="id.am-3">
+            <add>
+                <part name="guidance" class="supplemental-guidance" ns="https://gitlab.nist.gov/gitlab/rmf-tools">
+                    <p>Data flow diagrams enable a manufacturer to understand the flow of data
+                        between networked components. Documenting data flows enables organizations
+                        to understand expected behavior of their networks. This understanding of how
+                        devices communicate assists with troubleshooting as well as response and
+                        recovery activities. This information can be leveraged during forensic
+                        activities or used for analysis to identify anomalies.</p>
+                </part>
+                <part name="ot-specific" class="OT-specific-guidance" ns="https://gitlab.nist.gov/gitlab/rmf-tools">
+                    <p>Organizations should consider the impact on OT systems from the use of
+                        automated data flow mapping tools that use active scanning or require
+                        network monitoring tools (e.g., in-line network probes). Impacts could be
+                        due to the nature of the information, the volume of network traffic, or
+                        momentary disconnection of manufacturing system components from the network.
+                        Consider using data flow mapping tools that utilize these methods during
+                        planned downtime.</p>
+                </part>
+            </add>
+        </alter>
+    </modify>
+    <back-matter>
+        <resource uuid="de298731-62fe-409a-b3dd-e7e8bfe688e8">
+            <title>NIST Special Publication 800-53, Revision 5:  <em> Security and Privacy
+                Controls for Information Systems and Organizations</em>  (DOI link)</title>
+            <rlink media-type="application/pdf" href="https://doi.org/10.6028/NIST.SP.800-53r5"/>
+        </resource>        
+    </back-matter>
+</profile>
