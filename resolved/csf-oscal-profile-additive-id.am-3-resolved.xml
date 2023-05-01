@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/oscal.css"?>
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+         uuid="fabc0cb6-70d4-4500-894b-f0e082561713">
+   <metadata>
+      <title>ID.AM-3 with OT Guidance from SP 800-82r3.ipd</title>
+      <last-modified>2023-05-01T09:20:27.2164595-04:00</last-modified>
+      <version>1.1</version>
+      <oscal-version>1.0.4</oscal-version>
+      <link rel="resolution-source" href="csf-oscal-profile-additive-id.am-3.xml"/>
+      <link rel="reference" href="#de298731-62fe-409a-b3dd-e7e8bfe688e8"/>
+   </metadata>
+   <group class="function" id="id">
+      <title>IDENTIFY</title>
+      <prop name="label" value="ID"/>
+      <part name="statement">
+         <p>Develop an organizational understanding to manage cybersecurity risk to systems, people, assets, 
+                data, and capabilities.</p>
+      </part>
+      <control class="category" id="id.am">
+         <title>Asset Management</title>
+         <prop name="label" value="ID.AM"/>
+         <part name="statement" class="outcome">
+            <p>The data, personnel, devices, systems, and facilities that enable the organization to achieve 
+                    business purposes are identified and managed consistent with their relative importance to 
+                    organizational objectives and the organization’s risk strategy.</p>
+         </part>
+         <control class="subcategory" id="id.am-3">
+            <title>ID.AM-3</title>
+            <prop name="label" value="ID.AM-3"/>
+            <part name="statement" class="outcome">
+               <p>Organizational communication and data flows are mapped</p>
+            </part>
+            <part name="guidance"
+                  class="supplemental-guidance"
+                  ns="https://gitlab.nist.gov/gitlab/rmf-tools">
+               <p>Data flow diagrams enable a manufacturer to understand the flow of data
+                        between networked components. Documenting data flows enables organizations
+                        to understand expected behavior of their networks. This understanding of how
+                        devices communicate assists with troubleshooting as well as response and
+                        recovery activities. This information can be leveraged during forensic
+                        activities or used for analysis to identify anomalies.</p>
+            </part>
+            <part name="am-specific"
+                  class="Additive-specific-guidance"
+                  ns="https://gitlab.nist.gov/gitlab/rmf-tools">
+               <p>Data flow diagrams for AM processes represent not only the flow of data between
+                        networked components, but also relationships between data elements and their
+                        impacts on printed parts. AM provides more freedom in design complexity than other
+                        manufacturing technologies. Therefore, AM processes are heavily data-driven.  Examples
+                        of AM data elements that can be manipulated to adversely affect the manufacturing
+                        process include CAD geometry data, material specifications, AM machine function
+                        specifications, and process parameters such as layer thickness and infill pattern.
+                        Examples of adverse impacts include porosity, tensile strength, anisotropy, surface
+                        roughness, and geometric and dimensional inaccuracy.</p>
+            </part>
+         </control>
+      </control>
+   </group>
+   <back-matter>
+      <resource uuid="de298731-62fe-409a-b3dd-e7e8bfe688e8">
+         <title>NIST Special Publication 800-53, Revision 5:  <em> Security and Privacy
+                Controls for Information Systems and Organizations</em>  (DOI link)</title>
+         <rlink media-type="application/pdf"
+                href="https://doi.org/10.6028/NIST.SP.800-53r5"/>
+      </resource>
+   </back-matter>
+</catalog>

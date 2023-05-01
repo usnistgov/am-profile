@@ -1,0 +1,75 @@
+---
+catalog:
+  uuid: fabc0cb6-70d4-4500-894b-f0e082561713
+  metadata:
+    title: ID.AM-3 with OT Guidance from SP 800-82r3.ipd
+    last-modified: '2023-05-01T09:20:27.2164595-04:00'
+    version: '1.1'
+    oscal-version: 1.0.4
+    links:
+    - href: csf-oscal-profile-additive-id.am-3.xml
+      rel: resolution-source
+    - href: '#de298731-62fe-409a-b3dd-e7e8bfe688e8'
+      rel: reference
+  groups:
+  - id: id
+    class: function
+    title: IDENTIFY
+    props:
+    - name: label
+      value: ID
+    parts:
+    - name: statement
+      prose: Develop an organizational understanding to manage cybersecurity risk to systems, people,
+        assets, data, and capabilities.
+    controls:
+    - id: id.am
+      class: category
+      title: Asset Management
+      props:
+      - name: label
+        value: ID.AM
+      parts:
+      - name: statement
+        class: outcome
+        prose: The data, personnel, devices, systems, and facilities that enable the organization to achieve
+          business purposes are identified and managed consistent with their relative importance to organizational
+          objectives and the organization’s risk strategy.
+      controls:
+      - id: id.am-3
+        class: subcategory
+        title: ID.AM-3
+        props:
+        - name: label
+          value: ID.AM-3
+        parts:
+        - name: statement
+          class: outcome
+          prose: Organizational communication and data flows are mapped
+        - name: guidance
+          ns: https://gitlab.nist.gov/gitlab/rmf-tools
+          class: supplemental-guidance
+          prose: Data flow diagrams enable a manufacturer to understand the flow of data between networked
+            components. Documenting data flows enables organizations to understand expected behavior of
+            their networks. This understanding of how devices communicate assists with troubleshooting
+            as well as response and recovery activities. This information can be leveraged during forensic
+            activities or used for analysis to identify anomalies.
+        - name: am-specific
+          ns: https://gitlab.nist.gov/gitlab/rmf-tools
+          class: Additive-specific-guidance
+          prose: Data flow diagrams for AM processes represent not only the flow of data between networked
+            components, but also relationships between data elements and their impacts on printed parts.
+            AM provides more freedom in design complexity than other manufacturing technologies. Therefore,
+            AM processes are heavily data-driven. Examples of AM data elements that can be manipulated
+            to adversely affect the manufacturing process include CAD geometry data, material specifications,
+            AM machine function specifications, and process parameters such as layer thickness and infill
+            pattern. Examples of adverse impacts include porosity, tensile strength, anisotropy, surface
+            roughness, and geometric and dimensional inaccuracy.
+  back-matter:
+    resources:
+    - uuid: de298731-62fe-409a-b3dd-e7e8bfe688e8
+      title: 'NIST Special Publication 800-53, Revision 5: * Security and Privacy Controls for Information
+        Systems and Organizations* (DOI link)'
+      rlinks:
+      - href: https://doi.org/10.6028/NIST.SP.800-53r5
+        media-type: application/pdf

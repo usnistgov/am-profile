@@ -1,0 +1,34 @@
+---
+profile:
+  uuid: 0dd2e99e-4785-4bca-b22c-f42159cf3439
+  metadata:
+    title: ID.AM-3 with OT Guidance from SP 800-82r3.ipd
+    last-modified: '2023-02-13T14:24:42.9785643-05:00'
+    version: '1.1'
+    oscal-version: 1.0.4
+    links:
+    - href: '#de298731-62fe-409a-b3dd-e7e8bfe688e8'
+      rel: reference
+  imports:
+  - href: ../resolved/csf-oscal-profile-ot-id.am-3-resolved.xml
+    include-all: {}
+  merge:
+    as-is: true
+  modify:
+    alters:
+    - control-id: id.am-3
+      removes:
+      - by-name: ot-specific
+      adds:
+      - parts:
+        - name: am-specific
+          ns: https://gitlab.nist.gov/gitlab/rmf-tools
+          class: Additive-specific-guidance
+          prose: Data flow diagrams for AM processes represent not only the flow of data between networked
+            components, but also relationships between data elements and their impacts on printed parts.
+            AM provides more freedom in design complexity than other manufacturing technologies. Therefore,
+            AM processes are heavily data-driven. Examples of AM data elements that can be manipulated
+            to adversely affect the manufacturing process include CAD geometry data, material specifications,
+            AM machine function specifications, and process parameters such as layer thickness and infill
+            pattern. Examples of adverse impacts include porosity, tensile strength, anisotropy, surface
+            roughness, and geometric and dimensional inaccuracy.
