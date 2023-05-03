@@ -23,7 +23,8 @@ converted into [JSON](https://www.json.org/) and, subsequently, the [YAML](https
     `csf-oscal-profile-additive-id.am-3.xml` adds a additional layer of Additive Manufacturing security guidance to ID.AM-3. 
 
 `resolved` contains XML representations of `csf-oscal-profile-ot-id.am-3.xml` and `csf-oscal-profile-additive-id.am-3.xml`
-after applying OSCAL's [profile resolution algorithm](https://pages.nist.gov/OSCAL/concepts/processing/profile-resolution/). 
+after applying OSCAL's [profile resolution algorithm](https://pages.nist.gov/OSCAL/concepts/processing/profile-resolution/). The algorothm implementation used is 
+[here](https://github.com/usnistgov/OSCAL/tree/main/src/utils/util/resolver-pipeline).
 Profile resolution transforms an OSCAL profile into a "resolved" OSCAL catalog.
 
 `json` contains the contents of `src` and `resolved` converted into JSON via OSCAL's 
