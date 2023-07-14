@@ -1,6 +1,7 @@
 # Additive Manufacturing Profile
 
-This repository contains associated data for the manuscript *Data Assets and Risk Management for Additive Manufacturing* 
+This repository contains associated data for the manuscript *Layering Guidance for Additive
+Manufacturing Security* 
 by [Fahad Milaat](https://www.nist.gov/people/fahad-milaat) and 
 [Joshua Lubell](https://www.nist.gov/people/joshua-lubell). The associated data is the source 
 of the [OSCAL](https://pages.nist.gov/OSCAL) representations in Section 4 of the manuscript. _If you have not already read 
