@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="../css/oscal.css"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/main/xml/schema/oscal_catalog_schema.xsd" 
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://github.com/usnistgov/OSCAL/releases/download/v1.1.0/oscal_catalog_schema.xsd" 
     uuid="4ee75a26-c3fd-43b5-bf41-df760054abd1">
     <metadata>
         <title>Cybersecurity Framework</title>

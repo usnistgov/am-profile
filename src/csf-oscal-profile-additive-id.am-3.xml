@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="../css/oscal.css"?>
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://raw.githubusercontent.com/usnistgov/OSCAL/main/xml/schema/oscal_profile_schema.xsd" 
+    xsi:schemaLocation="http://csrc.nist.gov/ns/oscal/1.0 https://github.com/usnistgov/OSCAL/releases/download/v1.1.0/oscal_profile_schema.xsd" 
     uuid="0dd2e99e-4785-4bca-b22c-f42159cf3439">
     <metadata>
         <title>ID.AM-3 with OT Guidance from SP 800-82r3.ipd</title>

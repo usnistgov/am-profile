@@ -25,11 +25,11 @@ converted into [JSON](https://www.json.org/) and, subsequently, the [YAML](https
 
 `resolved` contains XML representations of `csf-oscal-profile-ot-id.am-3.xml` and `csf-oscal-profile-additive-id.am-3.xml`
 after applying OSCAL's [profile resolution algorithm](https://pages.nist.gov/OSCAL/concepts/processing/profile-resolution/). The algorothm implementation used is 
-[here](https://github.com/usnistgov/OSCAL/tree/main/src/utils/util/resolver-pipeline).
+[here](https://github.com/usnistgov/OSCAL/tree/main/src/utils/resolver-pipeline).
 Profile resolution transforms an OSCAL profile into a "resolved" OSCAL catalog.
 
 `json` contains the contents of `src` and `resolved` converted into JSON via OSCAL's 
-[XML-to-JSON converters](https://github.com/usnistgov/OSCAL/tree/main/json). 
+[XML-to-JSON converters](https://pages.nist.gov/OSCAL/tools/#data-conversion). 
 
 `yaml` contains the contents of `json` converted into YAML via a third-party JSON-to-YAML converter.
 Since JSON is a subset of YAML, conversion from JSON to YAML is easy. JSON-to-YAML converters are 
