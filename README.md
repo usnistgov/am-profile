@@ -4,10 +4,10 @@ This repository contains associated data for the published paper [Layered Securi
 Data Asset Management in Additive Manufacturing](https://doi.org/10.1115/1.4064128) 
 by [Fahad Milaat](https://www.linkedin.com/in/fahadmilaat/) and 
 [Joshua Lubell](https://www.nist.gov/people/joshua-lubell). 
-An earlier, unpublished manuscript is available for free [from NIST](https://www.nist.gov/publications/layered-security-guidance-data-asset-management-additive-manufacturing)). 
+An earlier version is available for free [from NIST](https://www.nist.gov/publications/layered-security-guidance-data-asset-management-additive-manufacturing). 
 The associated data is the source 
 of the [OSCAL](https://pages.nist.gov/OSCAL) representations in Section 4 of the paper. _If you have not already read 
-the papeer, please read it now before proceeding any further._
+the paper, please read it now before proceeding any further._
 
 This data was initially created using an [XML](https://www.w3.org/XML/) authoring tool and validated against the OSCAL 
 [catalog](https://pages.nist.gov/OSCAL/concepts/layer/control/catalog/) and 
